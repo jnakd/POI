@@ -1,8 +1,0 @@
-C:\Users\Administrator\Desktop\compare\20170915\RQ750_20170914.xls
-C:\Users\Administrator\Desktop\compare\20170915\RS140RS240_20170914.xls
-C:\Users\Administrator\Desktop\compare\20170915\RS160RS260_20170914.xls
-C:\Users\Administrator\Desktop\compare\20170915\TS140TS240_20170914.xls
-C:\Users\Administrator\Desktop\compare\20170915\TS150TS250_20170914.xls
-C:\Users\Administrator\Desktop\compare\20170915\TS440TS540_20170914.xls
-C:\Users\Administrator\Desktop\compare\20170915\TS450TS550_20170914.xls
-C:\Users\Administrator\Desktop\compare\20170915\TS460TS560_20170914.xls
