@@ -16,6 +16,15 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 
 public class SDL_Compare_Test {
 	public static void main(String args[]) throws Exception {
-		File src_xls = new File("")
+		File src_xls = new File("D:\\test\\SDL\\RS160RS260 SDL_1.8_20171220.xls");
+		File tgt_xls = new File("D:\\test\\SDL\\RS160RS260 SDL_1.4_20171122.xls");
+		Workbook src_data = WorkbookFactory.create(src_xls);
+		Workbook tgt_data = WorkbookFactory.create(tgt_xls);
+		int src_sheet_count = src_data.getNumberOfSheets();
+		int tgt_sheet_count = tgt_data.getNumberOfSheets();
+		int i = 1;
+		for (Sheet sheet : src_data) {
+			System.out.println("Sheet " + i + " of " + src_sheet_count + ": " + sheet.getSheetName());
+		}
 	}
-}
+} 
