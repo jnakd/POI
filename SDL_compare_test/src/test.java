@@ -18,7 +18,7 @@ public class test {
 	public static void main(String[] args) throws Exception {
 		//使用Files模式而非InputStreams模式
 		//--
-		File f = new File("E:\\18a\\ES\\20171222\\SDL\\RS140RS240_SDL_1.7_20171213_test_not.xls");
+		File f = new File("E:\\compare\\20170915\\RS160RS260_20170914.xls");
 		Workbook wb = WorkbookFactory.create(f);
 		//--
 		
@@ -35,7 +35,7 @@ public class test {
 		//--
 		//test open ole
 		//POIFSFileSystem fs = new POIFSFileSystem(new File("E:\\18a\\ES\\20171222\\SDL_src\\18A Block_TS460TS560_SDL_1.8_20171220.xlsx"));
-		XSSFWorkbook workbook = new XSSFWorkbook("E:\\18A\\ES\\20180104\\SDL_SRC\\18A Block_TS460TS560_SDL_1.8_20171220.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook("E:\\compare\\18A Block_RS160RS260 SDL_1.8_20171220.xlsx");
 		System.out.println(workbook.getSpreadsheetVersion());
 		  for (PackagePart pPart : workbook.getAllEmbedds()) {
 		      String contentType = pPart.getContentType();
@@ -61,10 +61,11 @@ public class test {
 		  						while (m.find()) {
 		  							cell.setCellValue(m.group(1).replaceAll("\\s*", ""));
 		  						}
-		  						System.out.println("\t\t" + cell.getAddress().formatAsString() + ": " + cell);
+		  						System.out.println(
+										"\t\t" + cell.getAddress().formatAsString() + ": " + cell);
 		  					}
 		  				}
-		  				OutputStream fileOut = new FileOutputStream("E:\\18A\\ES\\20180104\\SDL\\TS460TS560_SDL_1.8_20171220.xls");
+		  				OutputStream fileOut = new FileOutputStream("E:\\compare\\RS160RS260_SDL.xls");
 		  				System.out.println(embeddedWorkbook.getSpreadsheetVersion());
 		  				embeddedWorkbook.write(fileOut);
 		  				fileOut.close();

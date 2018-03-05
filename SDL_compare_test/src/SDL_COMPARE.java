@@ -9,7 +9,7 @@ public class SDL_COMPARE {
 	public static void main(String[] args) throws Exception {
 		//浣跨敤Files妯″紡鑰岄潪InputStreams妯″紡
 		//--
-		File f = new File("E:\\18a\\ES\\20171222\\SDL\\RS140RS240_SDL_1.7_20171213_test.xls");
+		File f = new File("E:\\onboard_ES\\17B Block_RS140RS240_SDL_1.19_20171106.xls");
 		Workbook wb = WorkbookFactory.create(f);
 		System.out.println(wb.getSpreadsheetVersion());
 		//--
