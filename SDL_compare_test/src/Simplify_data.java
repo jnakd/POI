@@ -117,10 +117,10 @@ public class Simplify_data {
 			for (Row row : sheet) {
 				for (Cell cell : row) {
 					System.out.println(cell.getRowIndex());
-					int t = cell.getRowIndex();
+					 int t = cell.getRowIndex();
 					if (t > 0) {
-						System.out.println("cell_number is :"+cell.getColumnIndex());
 						System.out.println("row_number is :"+cell.getRowIndex());
+						System.out.println("cell_number is :"+cell.getColumnIndex());
 						System.out.println(cell.getAddress().formatAsString());
 						dbdata[cell.getRowIndex()][cell.getColumnIndex()] = cell.getStringCellValue();
 						System.out.println(dbdata[cell.getRowIndex()][cell.getColumnIndex()] + "\t");
