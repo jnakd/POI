@@ -44,6 +44,9 @@ public class main {
         	//创建数据库连接,数据导入sqlite数据库
         	Sqlite.SqliteConn(outpathparent,file_list,dbhead_list,dbdata_list);
         	
+        	//数据比对,生成诧异数据表
+        	Sqlite.SqliteCompare(outpathparent,file_list);
+        	
 		} else
 			System.out.println("please input correct args!");
 //		Read_List RL = new Read_List("C:\\Users\\Administrator\\Desktop\\compare\\20170915\\","test.txt");

@@ -111,7 +111,7 @@ public class Simplify_data {
 		//int numberOfSheets = wb.getNumberOfSheets();
 		for (Sheet sheet : wb) {
 			int cellnumber = sheet.getRow(0).getPhysicalNumberOfCells();
-			int rownumber =sheet.getPhysicalNumberOfRows() ;
+			int rownumber =sheet.getPhysicalNumberOfRows() - 1 ;
 			dbdata = new String [rownumber][cellnumber];
 			System.out.println(cellnumber + "\t" + rownumber);
 			for (Row row : sheet) {
@@ -122,8 +122,8 @@ public class Simplify_data {
 						System.out.println("row_number is :"+cell.getRowIndex());
 						System.out.println("cell_number is :"+cell.getColumnIndex());
 						System.out.println(cell.getAddress().formatAsString());
-						dbdata[cell.getRowIndex()][cell.getColumnIndex()] = cell.getStringCellValue();
-						System.out.println(dbdata[cell.getRowIndex()][cell.getColumnIndex()] + "\t");
+						dbdata[cell.getRowIndex()-1][cell.getColumnIndex()] = cell.getStringCellValue();
+						System.out.println(dbdata[cell.getRowIndex()-1][cell.getColumnIndex()] + "\t");
 					}
 				}
 			}
